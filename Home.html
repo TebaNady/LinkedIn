@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container mainContainer">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/icon.png" alt="Linkedin" width="25" height="25">
+                        </a>
+                        <span class="input-group">
+                            <span class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                    </svg>
+                                </span>
+                            </span>
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        </span>
+                    </div>
+
+                    <div class="col-lg-9">
+                        <ul class="nav  justify-content-end">
+                            <li class="nav-item position-relative">
+                                <a class="nav-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-house mx-auto d-block" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
+                                    </svg>Home</a>
+
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" fill="currentColor" class="bi bi-people-fill mx-auto d-block"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                                    </svg>My network</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" fill="currentColor" class="bi bi-briefcase-fill mx-auto d-block "
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z" />
+                                        <path
+                                            d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z" />
+                                    </svg>Jobs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" fill="currentColor" class="bi bi-messenger mx-auto d-block"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76zm5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z" />
+                                    </svg>
+                                    Messaging</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" fill="currentColor" class="bi bi-bell-fill mx-auto d-block"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                                    </svg>Notifications</a>
+                            </li>
+                            <li class="nav-item">
+                                <img src="img/slide2.png" style="height: 27px; width: 27px;">
+                                <div class="has-dropdown">
+                                    <a href="#">Me</a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-lg-3">
+                                                        <a>
+                                                            <img src="img/slide2.png"
+                                                                style="height: 35px; width: 35px; ">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-lg-9">
+                                                        <p style="display: inline;">Teba Nady</p>
+                                                        <p style="font-size: 10px;">Hope</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row w-100">
+                                                    <button class="btn btn-outline-primary rounded-pill"
+                                                        style="height: 30px; font-size: 11px; width: 100%;">View
+                                                        profile</button>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div>
+                                                <p style="font-weight: bold;">Account</p>
+                                                <a href="#" style="display: block;">Try Premium for free</a>
+                                                <a href="#" style="display: block;">Settings & Privacy</a>
+                                                <a href="#" style="display: block;">Help</a>
+                                                <a href="#" style="display: block;">Language</a>
+                                            </div>
+                                            <hr>
+                                            <div>
+                                                <p style="font-weight: bold;">Manage</p>
+                                                <a href="#" style="display: block;">Posts & Activity</a>
+                                                <a href="#" style="display: block;">Job Posting Account</a>
+                                                <a href="#" style="display: block;">Language</a>
+                                            </div>
+                                            <hr>
+                                            <div>
+                                                <a href="#" style="display: block;">Sign Out</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <div style="border-left: 1px solid gray;"></div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="20" fill="currentColor" class="bi bi-menu-app mx-auto d-block"
+                                        viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A1.5 1.5 0 0 1 1.5 0h2A1.5 1.5 0 0 1 5 1.5v2A1.5 1.5 0 0 1 3.5 5h-2A1.5 1.5 0 0 1 0 3.5v-2zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-2zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+                                    </svg>For Bussiness</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="color: brown; text-decoration: underline;">Try Sales
+                                    Navigator</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-3 " >
+                <div style=" width: 100%; border-radius: 10px; background-color: white; padding: 0 3%;">
+                <div style="text-align: center;">
+                    <img src="img/slide2.png" width="80" height="80">
+                    <p>Teba Nady</p>
+                    <p style="font-size: 12px;">Hope</p>
+                </div>
+                <hr>
+                <div class="container-fluid" style="font-size: 9px;">
+                    <div class="row ">
+                        <div class="col-lg-9 pl-0 pr-0">Who's viewed your profile</div>
+                        <div class="col-lg-3">32</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-9 pl-0 pr-0">Impressions of your post</div>
+                        <div class="col-lg-3">144</div>
+                    </div>
+                </div>
+                <hr>
+                <div style="font-size: 9px; padding: 0;">
+                    <p>Access exclusive tools & insights</p>
+                    <a href="#">Try Sales Navigator</a>
+                </div>
+                <hr>
+                <div>
+                    <a href="#" style="font-size: 9px; color: black; font-weight: bold;">My items</a>
+                </div>
+                <br>
+                </div>                
+                <div class="sticky">
+                    <br>
+                    <p>Recent</p>
+                    <div style="font-size: 11px;">
+                        <p>Jobs Egypt</p>
+                        <p>Job 4 All - Jobs in Egypt</p>
+                        <p>Egypt Business Communities</p>
+                        <p>Data Scientist & Analyst</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 rounded ms-5">
+                <div style=" width: 100%; border-radius: 25px; background-color: white;">
+                    <br>
+                    <img src="img/slide2.png" class="personal_img"
+                        style="width: 60px; height: 60px; border: 2px black solid; border-radius: 100%; margin-left: 20px;">&nbsp;
+                    <input type="text" placeholder="Start a post"
+                        style="width: 80%;height: 50px; border-radius: 30px; border: 0.5px gray solid;">
+                    <br><br>
+                    <div class="postDiv">
+                        <span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue"
+                                class="bi bi-image" viewBox="0 0 16 16">
+                                <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                                <path
+                                    d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z" />
+                            </svg> Photo</span>
+                        <span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="green"
+                                class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                            </svg> Video</span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="orange"
+                                class="bi bi-calendar-event" viewBox="0 0 16 16">
+                                <path
+                                    d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                <path
+                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                            </svg> Event</span>
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="brown"
+                                class="bi bi-postcard" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4Zm7.5.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7ZM2 5.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5ZM10.5 5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3ZM13 8h-2V6h2v2Z" />
+                            </svg> Write article</span>
+                    </div>
+                    <br>
+                </div>
+                <hr>
+
+                <div>
+                    <div id="homeContant" style="background-color: white; width: 100%; border-radius: 25px;">
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/slide1.png" style="width: 50px; height: 50px; border-radius: 100%;">&nbsp;&nbsp;&nbsp;
+                        <span style="font-size: 20px;">Mohamed Fady</span>&nbsp;<span style="color: gray;">.Following</span>
+                        <p style="padding-left: 110px; color: gray; font-size: 13px; margin:-10px;">Developer</p>
+                        <br>
+                        <p
+                            style="padding-left: 110px; color: gray; font-size: 13px; margin:-10px; font-weight: bolder;">
+                            2h.<i class="bi bi-globe-americas" style="font-weight: bolder;"></i>
+                        </p>
+                        <br><br>
+                        <p style="margin-left: 25px;">Achieve marketing results with LinkedIn ads, no matter your objective. Now that's something to celebrate.</p>
+                        <br>
+                        <p style="color: blue; font-size: 15px; font-weight: bold; margin-left: 25px;">See translation
+                        </p>
+                        <hr class="hr">
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="bi bi-hand-thumbs-up" style="font-weight: bolder;"></i>&nbsp; <span
+                            style="color: gray; font-weight: bolder;">like</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="bi bi-chat-dots" style="font-weight: bolder;"></i>&nbsp; <span
+                            style="color: gray; font-weight: bolder;">Comment</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="bi bi-repeat" style="font-weight: bolder;"></i>&nbsp; <span
+                            style="color: gray; font-weight: bolder;">Repost</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="bi bi-send-fill" style="font-weight: bolder;"></i>&nbsp; <span
+                            style="color: gray; font-weight: bolder;">Send</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <br><br>
+                    </div>
+                </div>
+
+                <div id="homeContant" style="background-color: white; width: 100%; border-radius: 25px;">
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/slide1.png"
+                        style="width: 50px; height: 50px; border-radius: 100%;">&nbsp;&nbsp;&nbsp;
+                    <span style="font-size: 20px;">Mohamed Fady</span>&nbsp;<span
+                        style="color: gray;">.Following</span>
+                    <p style="padding-left: 110px; color: gray; font-size: 13px; margin:-10px;">Developer</p>
+                    <br>
+                    <p
+                        style="padding-left: 110px; color: gray; font-size: 13px; margin:-10px; font-weight: bolder;">
+                        2h.<i class="bi bi-globe-americas" style="font-weight: bolder;"></i>
+                    </p>
+                    <br><br>
+                    <p style="margin-left: 25px;">Achieve marketing results with LinkedIn ads, no matter your objective. Now that's something to celebrate.</p>
+                    <br>
+                    <p style="color: blue; font-size: 15px; font-weight: bold; margin-left: 25px;">See translation
+                    </p>
+                    <hr class="hr">
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="bi bi-hand-thumbs-up" style="font-weight: bolder;"></i>&nbsp; <span
+                        style="color: gray; font-weight: bolder;">like</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="bi bi-chat-dots" style="font-weight: bolder;"></i>&nbsp; <span
+                        style="color: gray; font-weight: bolder;">Comment</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="bi bi-repeat" style="font-weight: bolder;"></i>&nbsp; <span
+                        style="color: gray; font-weight: bolder;">Repost</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="bi bi-send-fill" style="font-weight: bolder;"></i>&nbsp; <span
+                        style="color: gray; font-weight: bolder;">Send</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br><br>
+                </div>
+                <div id="homeContant" style="background-color: white; width: 100%; border-radius: 25px;">
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/slide1.png"
+                        style="width: 50px; height: 50px; border-radius: 100%;">&nbsp;&nbsp;&nbsp;
+                    <span style="font-size: 20px;">Mohamed Fady</span>&nbsp;<span
+                        style="color: gray;">.Following</span>
+                    <p style="padding-left: 110px; color: gray; font-size: 13px; margin:-10px;">Developer</p>
+                    <br>
+                    <p
+                        style="padding-left: 110px; color: gray; font-size: 13px; margin:-10px; font-weight: bolder;">
+                        2h.<i class="bi bi-globe-americas" style="font-weight: bolder;"></i>
+                    </p>
+                    <br><br>
+                    <p style="margin-left: 25px;">Achieve marketing results with LinkedIn ads, no matter your objective. Now that's something to celebrate.</p>
+                    <br>
+                    <p style="color: blue; font-size: 15px; font-weight: bold; margin-left: 25px;">See translation
+                    </p>
+                    <hr class="hr">
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="bi bi-hand-thumbs-up" style="font-weight: bolder;"></i>&nbsp; <span
+                        style="color: gray; font-weight: bolder;">like</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="bi bi-chat-dots" style="font-weight: bolder;"></i>&nbsp; <span
+                        style="color: gray; font-weight: bolder;">Comment</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="bi bi-repeat" style="font-weight: bolder;"></i>&nbsp; <span
+                        style="color: gray; font-weight: bolder;">Repost</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="bi bi-send-fill" style="font-weight: bolder;"></i>&nbsp; <span
+                        style="color: gray; font-weight: bolder;">Send</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="col-lg-3 rounded ms-5" >
+                <div style="width: 100%; border-radius: 25px; background-color: white;">
+                    <p style="padding-top: 3%; font-size: 18px; text-align: center;">Add to your feed</p>
+                    <br>
+                    <div style="padding: 0 5%;">
+                    <img src="img/google.png" style="width: 40px; height: 40px; border-radius: 100%;">
+                    <span>Google</span>
+                    <p style="padding-left: 30%; color: gray; font-size: 15px;">Company . Technology</p>
+                    <button style="width: 50%;  border-radius: 25px; background-color: white; margin-left: 25%;">
+                        <i class="bi bi-plus" ></i> Follow</button>
+                    </div>
+                    <br>
+                    <div style="padding: 0 5%;">
+                    <img src="img/slide3.png" style="width: 40px; height: 40px; border-radius: 100%;">
+                    <span>Hady Mohamed</span>
+                    <p style="padding-left: 30%; color: gray; font-size: 15px;">HR Recruitment Specialist</p>
+                    <button style="width: 50%;  border-radius: 25px; background-color: white; margin-left: 25%;">
+                        <i class="bi bi-plus" ></i> Follow</button>
+                    </div>
+                    <br>
+                    <div style="padding: 0 5%;">
+                    <img src="img/icon.png" style="width: 40px; height: 40px; border-radius: 100%;">
+                    <span>LinkedIn</span>
+                    <p style="padding-left: 30%; color: gray; font-size: 15px;">Company . Hiring</p>
+                    <button style="width: 50%;  border-radius: 25px; background-color: white; margin-left: 25%;">
+                        <i class="bi bi-plus" ></i> Follow</button>
+                        
+                    </div>
+                    <br>
+                </div>
+                <br>
+                    <div style="position: -webkit-sticky; position: sticky;top: 0;">
+                        <br>
+                        <img src="img/hiring.png" style="width: 100%; border-radius: 25px;">
+                        <br>
+                        
+                            <div class=" footer">
+                                <a href="#">About</a>
+                                <a href="#">Accessibility</a>
+                                <a href="#">Help Center</a>
+                                <a href="#">Privacy & Terms</a>
+                                <a href="#">Ad Choices</a>
+                                <a href="#">Advertising</a>
+                                <a href="#">Business Services</a>
+                                <a href="#">Get the LinkedIn app</a>
+                                <a href="#">More</a>
+                                <div >
+                                    <img src="img/logo.png" style="width: 25%;">
+                                    <p style="display: inline;">LinkedIn Corporation © 2023</p>
+                                </div>
+                                
+                            </div>
+                        <br>
+                    </div>
+         
+        </div>
+    </div></div>
+
+</body>
+
+</html>

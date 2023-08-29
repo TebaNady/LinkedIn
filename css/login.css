@@ -1,0 +1,42 @@
+.container a{
+    color: gray;
+}
+.container a:hover{
+    color: black;
+}
+#btnShow{
+    margin-left: -55px;
+    background-color: white;
+    border: 0;
+    height: 20px;
+    color: rgb(109, 109, 248);
+    margin-top: 6px;
+}
+#loginForm input{
+    border: black solid 1px;
+}
+@media only screen and (max-width: 992px) {
+    .loginImg{
+        visibility: hidden;
+    }
+}
+#footer{
+    font-size: 15px;
+}
+#footer a{
+    text-decoration: none;
+    color: gray;
+    display: block;
+}
+#footer a:hover{
+    color: rgb(63, 63, 236);
+}
+footer a{
+    text-decoration: none;
+    color: gray;
+    display: block;
+}
+footer a:hover{
+    color: rgb(63, 63, 236);
+    text-decoration: underline;
+}

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Bootstrap" width="130" height="30">
+            </a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-postcard mx-auto d-block" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4Zm7.5.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7ZM2 5.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5ZM10.5 5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3ZM13 8h-2V6h2v2Z" />
+                        </svg>Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-people-fill mx-auto d-block" viewBox="0 0 16 16">
+                            <path
+                                d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                        </svg>Peaple</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-collection-play mx-auto d-block" viewBox="0 0 16 16">
+                            <path
+                                d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1zm2.765 5.576A.5.5 0 0 0 6 7v5a.5.5 0 0 0 .765.424l4-2.5a.5.5 0 0 0 0-.848l-4-2.5z" />
+                            <path
+                                d="M1.5 14.5A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5h-13zm13-1a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5h-13A.5.5 0 0 0 1 6v7a.5.5 0 0 0 .5.5h13z" />
+                        </svg>
+                        Learning</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" class="bi bi-briefcase-fill mx-auto d-block " viewBox="0 0 16 16">
+                            <path
+                                d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z" />
+                            <path
+                                d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z" />
+                        </svg>Jobs</a>
+                </li>
+                <div style="border-left: 1px solid gray;"></div>
+                <button class="btn btn-light rounded-pill m-1">Join Now</button>
+                <button type="button" class="btn btn-outline-primary rounded-pill m-1">Primary</button>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid mt-5 d-flex">
+        <div class="row">
+            <div class="col-lg-4 offset-1">
+                <p style="color: rgb(192, 110, 110); font-size: 50px;">Welcome to your professional community</p>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="loginUsername">Email or phone</label>
+                        <input type="text" class="form-control" id="loginUsername" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <div class="d-flex">
+                            <input type="password" class="form-control inputField" id="loginPassword" required>
+                            <button onclick="myFunction()" id="btnShow">Show</button>
+                        </div>
+
+                        <p id="errorPara" style="display: none; color: red;">Invalid Email or Password</p>
+                    </div>
+                    <a href="#">Forget password?</a>
+                    <button type="submit" class="btn btn-primary rounded-pill d-block w-100 mt-4">Sign in</button>
+                    <div style="width: 100%; height: 20px; border-bottom: 1px solid rgb(73, 70, 70); text-align: center">
+                        <span style="font-size: 15px; background-color: #ffffff; padding: 0 10px;">
+                            or
+                        </span>
+                    </div>
+                            <a href="https://accounts.google.com/gsi/select?client_id=990339570472-k6nqn1tpmitg8pui82bfaun3jrpmiuhs.apps.googleusercontent.com&auto_select=false&ux_mode=popup&ui_mode=card&context=use&as=UXsCXK1IyOliXtSzN8861Q&channel_id=386b29055e22903c73ef069177393fad17d575ed9b1c361e138f3ced95db8215&origin=https%3A%2F%2Fwww.linkedin.com" target="_blank" class="btn btn-outline-dark rounded-pill w-100 mt-5"><img src="img/google.png"
+                                style="height: 16px; width: 16px;"> Continue with Google</a>
+                            <a href="Register.html" target="_blank" class="btn btn-outline-dark rounded-pill w-100 mt-2">New in Linkedin? Join Now</a>
+                </form>
+            </div>
+            <div class="col-lg-7">
+                <img src="img/loginImg.png" style="height: 100%; width: 100%;" class="loginImg">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-body-tertiary">
+        <div class="row">
+            <div class="col-lg-5 offset-1">
+                <p style="font-size: 50px;">Explore collaborative articles</p>
+                <p style="font-size: 20px;">We’re unlocking community knowledge in a new way.
+                    Experts add insights directly into each article, started with the help of AI.</p>
+            </div>
+            <div class="col-lg-5">
+                <div style="height: 80px;"></div>
+                <button class="btn btn-outline-dark rounded-pill mb-2">Marketing</button>
+                <button class="btn btn-outline-dark rounded-pill mb-2">Public Administration</button>
+                <button class="btn btn-outline-dark rounded-pill mb-2">Employee Training</button>
+                <button class="btn btn-outline-dark rounded-pill mb-2">Healthcare</button>
+                <button class="btn btn-outline-dark rounded-pill mb-2">Engineering</button>
+                <button class="btn btn-outline-dark rounded-pill mb-2">Talent Management</button>
+                <button class="btn btn-outline-dark rounded-pill mb-2">IT Services</button>
+                <button class="btn btn-outline-dark rounded-pill mb-2">Business Administration</button>
+                <button class="btn btn-outline-dark rounded-pill mb-2">Telecommunications</button>
+                <button class="btn btn-outline-primary rounded-pill mb-2">Show all</button>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+<br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5 offset-1">
+                <p style="font-size: 50px;">Find the right job or internship for you</p>
+            </div>
+            <div class="col-lg-5">
+                <div style="height: 60px;"></div>
+                <p>SUGGESTED SEARCHES</p>
+                <button class="btn btn-outline-dark rounded-pill mb-2">Engineering</button>
+                <button class="btn btn-outline-dark rounded-pill mb-2">Business Development</button>
+                <button class="btn btn-outline-dark rounded-pill mb-2">Finance</button>
+                <button class="btn btn-outline-dark rounded-pill mb-2">Administrative Assistant</button>
+                <button class="btn btn-outline-dark rounded-pill mb-2">Retail Associate</button>
+                <button class="btn btn-outline-dark rounded-pill mb-2">Customer Service</button>
+                <button class="btn btn-outline-dark rounded-pill mb-2">Operations</button>
+                <button class="btn btn-outline-dark rounded-pill mb-2">Information Technology</button>
+                <button class="btn btn-outline-dark rounded-pill mb-2">Marketing</button>
+                <button class="btn btn-outline-dark rounded-pill mb-2">Human Resources</button>
+                <br>
+                <button class="btn btn-outline-dark rounded-pill mb-2">Show more <img src="img/arrow.png"
+                        style="height: 16px;width: 16px;"></button>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid" style="background-color: rgb(243, 223, 223);">
+        <div class="row">
+            <div class="col-lg-5 offset-1">
+                <p style="color: rgb(192, 110, 110); font-size: 50px;">Post your job for millions of people to see</p>
+            </div>
+            <div class="col-lg-5">
+                <div style="height: 80px;"></div>
+                <button class="btn btn-outline-primary rounded-pill mb-2">Post a job</button>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>   
+    <div id="carouselExample" class="carousel slide bg-body-tertiary">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 offset-1">
+                        <p style="color: rgb(192, 110, 110); font-size: 35px; margin-top: 100px;">Let the right people know you’re open to work</p>
+                        <p style="font-size: 30px;">With the Open To Work feature, you can privately tell recruiters or publicly share with the LinkedIn community that you are looking for new job opportunities.</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="img/slide1.png" style=" width: 100%;">
+                    </div>
+                    <div class="col-lg-1"></div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 offset-1">
+                        <p style="color: rgb(192, 110, 110); font-size: 35px; margin-top: 100px;">Conversations today could lead to opportunity tomorrow</p>
+                        <p style="font-size: 30px;">Sending messages to people you know is a great way to strengthen relationships as you take the next step in your career.</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="img/slide2.png" style=" width: 100%;">
+                    </div>
+                    <div class="col-lg-1"></div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 offset-1">
+                        <p style="color: rgb(192, 110, 110); font-size: 35px; margin-top: 100px;">Stay up to date on your industry</p>
+                        <p style="font-size: 30px;">From live videos, to stories, to newsletters and more, LinkedIn is full of ways to stay up to date on the latest discussions in your industry.</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="img/slide3.png" style=" width: 100%;">
+                    </div>
+                    <div class="col-lg-1"></div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev bg-dark rounded-circle" style="height: 8%; width: 3%; margin-top: 200px;" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next bg-dark rounded-circle" style="height: 8%; width: 3%; margin-top: 200px;" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5 offset-1">
+                <img src="img/link1.svg" style=" width: 80%;">
+                <p style="font-size: 40px;">Connect with people who can help</p>
+                <button class="btn btn-outline-dark rounded-pill">Find peaple you know</button>
+            </div>
+            <div class="col-lg-5">
+                <img src="img/link2.svg" style=" width: 80%;">
+                <p style="font-size: 40px;">Learn the skills you need to succeed</p>
+                <div class="dropdown">
+                    <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Choose a topic to learn about
+                    </a>
+                  
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>  
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-1 offset-1 bg-body-tertiary"></div>
+            <div class="col-lg-4  bg-body-tertiary">
+                <p style="color: rgb(192, 110, 110); font-size: 40px; margin-top: 100px;">Who is LinkedIn for?</p>
+                <p style="font-size: 40px; color: rgb(48, 47, 47);">Anyone looking to navigate their professional life.</p>
+                <button class="btn btn-outline-secondary mb-2 w-75">Find a coworker or classmate <img src="img/rightArr.png" style="height: 16px; width: 16px;"></button>
+                <br>
+                <button class="btn btn-outline-secondary mb-2 w-75">Find a new job <img src="img/rightArr.png" style="height: 16px; width: 16px;"></button>
+                <br>
+                <button class="btn btn-outline-secondary mb-2 w-75">Find a course or training<img src="img/rightArr.png" style="height: 16px; width: 16px;"></button>
+            
+            </div>
+            <div class="col-lg-6">
+                <img src="img/link3.jpg" style="width: 100%;">
+            </div>
+            
+    </div>
+    
+      <div class="card bg-dark text-white" style="width: 100%; border: none;">
+        <img src="img/image.jpeg" class="card-img"/>
+        <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.3); padding-left: 20%;">
+          <h5 class="card-title">Join your colleagues, classmates, and friends on LinkedIn.</h5>
+          <button class="btn btn-primary rounded-pill">Get Started</button>
+        </div>
+      </div>
+
+        <div class="container-fluid bg-body-tertiary" id="footer">
+            <div class="row">
+                <div class="col-lg-2 offset-1">
+                    <img src="img/logo.png" style="height: 15px; width: 40%;">
+                </div>
+                <div class="col-lg-2">
+                    <p>General</p>
+                    <a href="#">Sign Up</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">About</a>
+                    <a href="#">Press</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Developers</a>
+                </div>
+                <div class="col-lg-2">
+                    <p>Browse LinkedIn</p>
+                    <a href="#">Learning</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">Salary</a>
+                    <a href="#">Mobile</a>
+                    <a href="#">Services</a>
+                    <a href="#">Products</a>
+                </div>
+                <div class="col-lg-2">
+                    <p>Business Solutions</p>
+                    <a href="#">Talent</a>
+                    <a href="#">Marketing</a>
+                    <a href="#">Sales</a>
+                    <a href="#">Learning</a>
+                </div>
+                <div class="col-lg-2">
+                    <p>Directories</p>
+                    <a href="#">Members</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">Companies</a>
+                    <a href="#">Featured</a>
+                    <a href="#">Learning</a>
+                    <a href="#">Posts</a>
+                    <a href="#">Articles</a>
+                    <a href="#">Schools</a>
+                    <a href="#">News</a>
+                    <a href="#">News Letters</a>
+                    <a href="#">Services</a>
+                    <a href="#">Products</a>
+                    <a href="#">Advice</a>
+                    <a href="#">People Search</a>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+        <footer>
+            <div class="container" style="font-size: 11px;">
+                <div class="row">
+                    <div class="col-lg-1">
+                        <img src="img/logo.png" style="width: 100%;">
+                    </div>
+                    <div class="col-lg-1">
+                        <p>© 2023</p>
+                    </div>
+                    <div class="col-lg-1"><a href="#">About</a></div>
+                    <div class="col-lg-1"><a href="#">Accessibility</a></div>
+                    <div class="col-lg-1"><a href="#">User Agreement</a></div>
+                    <div class="col-lg-1"><a href="#">Privacy Policy</a></div>
+                    <div class="col-lg-1"><a href="#">Cookie Policy</a></div>
+                    <div class="col-lg-1"><a href="#">Copyright Policy</a></div>
+                    <div class="col-lg-1"><a href="#">Brand Policy</a></div>
+                    <div class="col-lg-1"><a href="#">Guest Controls</a></div>
+                    <div class="col-lg-1"><a href="#">Community Guidelines</a></div>
+                    <div class="col-lg-1">
+                        <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Language
+                            </a>
+                          
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <script src="bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

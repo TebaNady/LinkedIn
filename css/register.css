@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(224, 224, 221);
+}
+#mainPara{
+    text-align: center;
+    font-size: 30px;
+}
+#mainDiv{
+    padding: 1%;
+    background-color: white;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#registrationForm input{
+    border: black solid 1px;
+    margin-bottom: 3%;
+}
+#btnShow{
+    margin-left: 60%;
+    background-color: white;
+    border: 0;
+    height: 20px;
+    color: rgb(109, 109, 248);
+}
+#policies{
+    font-size: 12px;
+    text-align: center;
+}
+#policies a{
+    text-decoration: none;
+}
+footer{
+    font-size: 15px;
+}
+footer a{
+    text-decoration: none;
+    color: gray;
+    display: block;
+}
+footer a:hover{
+    color: rgb(63, 63, 236);
+    text-decoration: underline;
+}
